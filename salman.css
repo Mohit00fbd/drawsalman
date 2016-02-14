@@ -1,0 +1,28 @@
+body {
+  background: url(drawsalman.png) repeat;
+  margin: 0;
+padding: 0;
+  overflow: hidden;
+}
+
+.share {
+  overflow: hidden;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.twitter-share-button {
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.twitter-follow-button {
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+
+.fb-like {
+  vertical-align: bottom;
+  margin-right: 8px;
+}

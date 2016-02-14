@@ -1,0 +1,125 @@
+<!--     Created by @mradul0     _____                _____          
+         /\    \              /\    \         
+        /::\____\            /::\____\        
+       /::::|   |           /:::/    /        
+      /:::::|   |          /:::/    /         
+     /::::::|   |         /:::/    /          
+    /:::/|::|   |        /:::/____/           
+   /:::/ |::|   |        |::|    |            
+  /:::/  |::|___|______  |::|    |     _____  
+ /:::/   |::::::::\    \ |::|    |    /\    \ 
+/:::/    |:::::::::\____\|::|    |   /::\____\
+\::/    / ~~~~~/:::/    /|::|    |  /:::/    /
+ \/____/      /:::/    / |::|    | /:::/    / 
+             /:::/    /  |::|____|/:::/    /  
+            /:::/    /   |:::::::::::/    /   
+           /:::/    /    \::::::::::/____/    
+          /:::/    /      ~~~~~~~~~~          
+         /:::/    /                           
+        /:::/    /                            
+        \::/    /                             
+         \/____/                              
+                                              -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Draw Salman, with Salman</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="salman.css">
+	<link rel="icon" type="image/ico" href="favicon.ico">	
+	<meta property="og:url"           content="http://drawsalman.in" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Draw Salman" />
+	<meta property="og:description"   content="Draw Salman, With Salman" />
+	<meta property="og:image"         content="web.png" />
+	<meta name="twitter:title" content="Draw Salman" />
+	<meta name="twitter:image" content="web.png" />
+	<meta name="twitter:url" content="http://drawsalman.in" />
+	<meta name="twitter:card" content="" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="description" content="Draw Salman, with Salman. Created by @mradul0." />
+	<meta name="author" content="@mradul0" />
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52133579-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1058370227518450";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<audio id="salman" autoplay="autoplay">
+	<source src="salman.mp3" type="audio/mp3">
+</audio>
+ <script>
+ function aud_play_pause(){
+ 	myaud = document.getElementBy('salman');
+ 	if(myaud.paused){
+ 		myaud.play();
+ 	}
+ 	else{
+ 		myaud.pause();
+ 	}
+ }
+ </script>
+<script type="text/javascript">
+
+			var imageWidthHalf, imageHeightHalf;
+
+			var canvas = document.createElement( 'canvas' );
+			canvas.width = window.innerWidth;
+			canvas.height = window.innerHeight;
+			canvas.style.display = 'block';
+			document.body.appendChild( canvas );
+
+			var context = canvas.getContext( '2d' );
+
+			var image = document.createElement( 'img' );
+
+			image.addEventListener('load', function() {
+
+				imageWidthHalf = Math.floor( this.width / 2 );
+				imageHeightHalf = Math.floor( this.height / 2 );
+
+				document.addEventListener( 'mousemove', onMouseEvent, false );
+				document.addEventListener( 'touchstart', onTouchEvent, false );
+				document.addEventListener( 'touchmove', onTouchEvent, false );
+
+			}, false );
+
+			image.src = "salman1.png";
+
+			function onMouseEvent( event ) {
+
+				context.drawImage( image, event.clientX - imageWidthHalf, event.clientY - imageHeightHalf );
+
+			}
+
+			function onTouchEvent( event ) {
+
+				event.preventDefault();
+
+				for ( var i = 0; i < event.touches.length; i++ ) {
+
+					context.drawImage( image, event.touches[i].pageX - imageWidthHalf, event.touches[i].pageY - imageHeightHalf );
+
+				}
+
+			}
+
+		</script>
+		<div class="share"><a href="https://twitter.com/share" class="twitter-share-button" data-via="mradul0">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><div class="fb-like" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></div>
+</body></html>
